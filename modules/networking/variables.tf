@@ -1,0 +1,27 @@
+
+variable "project_name" {
+  description = "Project identifier used in resource names."
+  type        = string
+}
+
+variable "environment" {
+  description = "Deployment environment."
+  type        = string
+}
+
+variable "vpc_cidr" {
+  description = "IPv4 CIDR range for the VPC."
+  type        = string
+  default     = "10.0.0.0/16"
+}
+
+variable "public_subnet_cidr" {
+  description = "IPv4 CIDR range for the public subnet."
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+variable "availability_zone" {
+  description = "Availability Zone for the public subnet."
+  type        = string
+}
